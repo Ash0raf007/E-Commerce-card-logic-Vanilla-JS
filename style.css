@@ -1,0 +1,179 @@
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  display: flex;
+gap: 30px;
+align-items: center;
+list-style-type: none;
+background-color: burlywood;
+height: 60px;
+}
+.card{
+  width: 320px;
+  height: 480px;
+  border: salmon solid ;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+
+
+}
+hr{
+width: 315px;
+height: 5px;
+background-color: burlywood;
+border-radius: 10px;
+}
+button{
+  width: 120px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: burlywood;
+  border-radius: 10px;
+  font-weight: 800;
+  
+}
+
+img{
+  height:220px; 
+  width:220px;
+  transition: all .3s ease-in-out;
+  width: 300px;
+}
+img:hover{
+transform: rotate(7deg) scale(.9);
+transition: all .4s ease-in;
+}
+.main-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.correct{
+  background-image: url(./icon-correct-24-2-256.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.VCART{
+position: fixed;
+text-align: center;
+color: azure;
+font-weight: 600;
+cursor: pointer;
+padding: 12px 8px;
+top:3vh;
+right: 3vh;
+border-radius: 10px;
+background-color: brown;
+
+}
+
+.content{
+  background-color: rgba(0, 0, 0, 0.918);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(110vw);
+  transition: all 0.5s;
+}
+.content.active{
+  transform: translateX(0);
+}
+#close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+color: white;
+  font-size: 42px;
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+#close:hover{
+transform: rotate(180deg);
+
+ font-size: 24px;
+ opacity: 1;
+ cursor: pointer;
+ font-weight: 600;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.item-content{
+  display: flex;
+width: 80%;
+margin-top: 40px;
+margin-inline: 20px;
+height: 150px;
+border: solid ;
+background-color: #ffff;
+border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-cont{
+  width: 120px;
+  height: 120px;
+
+}
+.total-price{
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (width < 700px) {
+  .main-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .VCART{
+    margin-top: 50%;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
